@@ -1,3 +1,5 @@
+require("newrelic")
+
 const express = require("express")
 
 const cors = require("cors")
@@ -11,7 +13,7 @@ app.get("/", (req, res) => {
     {
       id: "001",
       name: "Raghavender",
-      role: "DevOps Engineer",
+      role: "DevOps",
     },
   ])
 })
@@ -19,3 +21,4 @@ app.get("/", (req, res) => {
 app.listen(8080, () => {
   console.log("listning from port 8080")
 })
+// done
